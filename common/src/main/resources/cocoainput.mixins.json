@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "jp.axer.cocoainput.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "EditBoxMixin",
+    "AbstractSignEditScreenAccessor",
+    "AbstractSignEditScreenMixin",
+    "BookEditScreenAccessor",
+    "BookEditScreenMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

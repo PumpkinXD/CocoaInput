@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/Axeryok/CocoaInput/issues"
+license = "Minecraft Mod Public License Japanese Transration"
+
+[[mods]]
+modId = "cocoainput"
+version = "${version}"
+displayName = "Cocoainput"
+authors = "Axeryok"
+description = '''
+Support IME - Input Method Editor(Japanese,Chinese,Korean) in Minecraft on Multi-platforms(macOS, Windows, X11).
+'''
+#logoFile = ""
+displayURL="https://axer.jp/"
+credits="This mod uses JavaNativeAccess(Apache License2)."
+
+[[dependencies.cocoainput]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cocoainput]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "cocoainput.mixins.json"

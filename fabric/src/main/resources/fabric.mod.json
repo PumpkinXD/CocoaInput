@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "cocoainput",
+  "version": "${version}",
+  "name": "Cocoainput",
+  "description": "Support IME - Input Method Editor(Japanese,Chinese,Korean) in Minecraft on Multi-platforms(macOS, Windows, X11).",
+  "authors": [
+    "Axeryok"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cocoainput",
+    "sources": "https://github.com/Axeryok/CocoaInput"
+  },
+  "license": "MMPLJ",
+  "icon": "assets/cocoainput/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "jp.axer.cocoainput.fabric.CocoaInputFabric"
+    ],
+    "client": [
+      "jp.axer.cocoainput.fabric.client.CocoaInputFabricClient"
+    ]
+  },
+  "mixins": [
+    "cocoainput.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
